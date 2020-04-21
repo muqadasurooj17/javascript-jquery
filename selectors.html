@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>J QUERY CRASH COURSE|Selectors</title>
+	<script 
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<style>
+		body{
+			font-weight: bold;
+			font-size: 20px;
+		 font-family: arial;
+		 line-height: 1.5em;
+		}
+		header{
+			background: #333;
+			color: #ffff;
+			padding: 20px;
+		text-align: center;
+			border-bottom: 4px; #000 solid;
+			margin-bottom: 10px;
+		}
+		#container {
+			width: 90px;
+			margin:auto;
+			padding: 15px;
+		}
+	
+	</style>
+</head>
+
+<body>
+	<header>
+	<h1>J QUERY CRASH COURSE!!</h1>
+</header>
+
+<div id="#container">
+	<h1 id="heading1">Heading One</h1>
+	<p id="para1"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. <span>Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip</span> ex ea commodo
+	consequat.</p>
+	<h1 class="heading2">Heading two</h1>
+	<p class="para2"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris <span>nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit</span> in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. </p>
+
+<ul id="list">
+	<li>List Items</li>
+	<li>List Items</li>
+<li>List Items</li>
+<li>List Items</li>
+<li>List Items</li>
+<li>List Items</li>
+<li>List Items</li>
+<li>List Items</li>
+
+</ul>
+
+<input type="button" value="button 1">
+<input type="submit" value="button 1">
+<input type="text">
+<a href="https://google.com">Google</a>
+<a href="https://yahoo.com">Yahoo</a>
+
+</div>
+<script>
+	//$('h1').hide();
+	//$('.heading2').hide();
+	$('p span').css('color','red');
+$('ul#list li:first').css('color','green');
+$('ul#list li:last').css('color','red');
+$('ul#list li:even').css('background-color','yellow');
+$('ul#list li:odd').css('background-color','#cccccc');
+
+//$(':text').hide();
+$('[href]').css('color','red');
+$('a[href="https://yahoo.com"]').css('color','green');
+
+</script>
+</body>
+</html>

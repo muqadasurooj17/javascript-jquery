@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+					<html>
+					<head>
+						<title>J Query task</title>
+						<script 
+						src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+			 </head>
+			 <style>
+			 </style>
+			 <body>
+        <input type="text" id="data" name="Data"  >
+        <input type="text" name="heading" id="headings" >
+        <div ></div>
+                            <button id="btn1">add</button>
+                            <button id="btn2">remove</button>
+
+
+			
+
+<script>
+		       	$(document).ready(function(){
+		      $('#data').change(function() {
+		      	$('#btn1').click(function(){
+		     $('#headings').val($('#data').val());}); });
+	             $("#btn2").click(function(){
+	         $('#data').val('');
+	         $('#headings').val('');
+	          });	       });
+	      </script>
+	  </body>
